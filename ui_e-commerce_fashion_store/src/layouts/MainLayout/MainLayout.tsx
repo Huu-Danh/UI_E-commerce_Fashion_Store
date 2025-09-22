@@ -2,15 +2,14 @@ import Footer from 'src/components/Footer'
 import Header from 'src/components/Header'
 
 interface Props {
-  childrent?: React.ReactNode
+  children?: React.ReactNode
 }
 
-export default function MainLayout({ childrent }: Props) {
+export default function MainLayout({ children }: Props) {
   return (
     <div>
       <Header />
-      <div className='bg-indigo-200 h-screen'></div>
-      {childrent}
+      {children}
       <Footer />
     </div>
   )

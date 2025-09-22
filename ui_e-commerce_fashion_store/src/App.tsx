@@ -1,8 +1,9 @@
 import './App.css'
-import MainLayout from './layouts/MainLayout'
+import useRouteElements from './useRouteElements'
 
 function App() {
-  return <MainLayout />
+  const routeElements = useRouteElements()
+  return <>{routeElements}</>
 }
 
 export default App
